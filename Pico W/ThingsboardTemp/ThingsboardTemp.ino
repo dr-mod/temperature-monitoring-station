@@ -14,11 +14,11 @@
 #include <HTTPClient.h>
 #define DHTPIN 1
 #define DHTTYPE DHT11
-const char* ssid = "Preston"; //NEEDED
-const char* password = "J0y/|$t1CK";//NEEDED
+const char* ssid = "SSID"; //NEEDED
+const char* password = "PASSWORD";//NEEDED
 
 // Domain Name with full URL Path for HTTP POST Request
-const char* serverName = "http://connect.soutiessandbox.com:9090/api/v1/Temp_RasPi/telemetry";//IP,PORT & ACCESS TOKEN NEEDED
+const char* serverName = "http://IO.THINGSBOARD.COM:9090/api/v1/ACCESS_TOKEN/telemetry";//IP,PORT & ACCESS TOKEN NEEDED
 
 // For a final application, check the API call limits per hour/minute to avoid getting blocked/banned
 DHT dht(DHTPIN, DHTTYPE);
